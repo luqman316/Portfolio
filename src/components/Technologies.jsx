@@ -4,6 +4,8 @@ import { FaWordpress } from "react-icons/fa";
 import { RiReactjsLine, RiTailwindCssFill } from "react-icons/ri";
 import { DiJavascript } from "react-icons/di";
 import { motion } from "framer-motion";
+import { SiNestjs } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
 
 const Technologies = () => {
   // Continuous bounce animation for the icons
@@ -39,11 +41,34 @@ const Technologies = () => {
         </motion.h1>
         <div className="flex flex-wrap items-center justify-center gap-4">
           {[
-            { icon: <RiReactjsLine className="text-7xl text-cyan-400" />, key: 'react' },
-            { icon: <TbBrandNextjs className="text-7xl text-green-800" />, key: 'nextjs' },
-            { icon: <FaWordpress className="text-7xl text-gray-400" />, key: 'wordpress' },
-            { icon: <DiJavascript className="text-7xl text-orange-600" />, key: 'javascript' },
-            { icon: <RiTailwindCssFill className="text-7xl text-cyan-400" />, key: 'tailwind' },
+            {
+              icon: <RiReactjsLine className="text-7xl text-cyan-400" />,
+              key: "react",
+            },
+            {
+              icon: <TbBrandNextjs className="text-7xl text-green-800" />,
+              key: "nextjs",
+            },
+            {
+              icon: <FaWordpress className="text-7xl text-gray-400" />,
+              key: "wordpress",
+            },
+            {
+              icon: <DiJavascript className="text-7xl text-orange-600" />,
+              key: "javascript",
+            },
+            {
+              icon: <RiTailwindCssFill className="text-7xl text-cyan-400" />,
+              key: "tailwind",
+            },
+            {
+              icon: <SiNestjs className="text-7xl text-red-600" />,
+              key: "tailwind",
+            },
+            {
+              icon: <SiTypescript className="text-7xl text-blue-500" />,
+              key: "tailwind",
+            },
           ].map((tech) => (
             <motion.div
               key={tech.key}
